@@ -54,7 +54,7 @@ def update_user_balance(user_id: int, user: UserModel, balance: Decimal) -> None
     """
     try:
         UserModel.objects.filter(id=user_id).update(balance=F('balance') + balance)
-        create_balance_story(user=user, balance=balance, type_balance=BalanceTypesChoices.RECEIVED_TRANSFER)
+        create_balance_story(user=user, balance=balance, type_balance=BalanceTypesChoices.ACCOUNT_RECHARGED)
 
     except Exception as e:
         logger.warning(f'Error {str(e)}')
