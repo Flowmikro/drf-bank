@@ -70,7 +70,6 @@ class IncreaseBalanceAPIView(APIView):
                     balance=balance,
                 )
 
-            # Возвращаем сообщение о том, что задача запущена
             return Response(
                 {
                     'Message': 'Balance successfully increased',
@@ -136,7 +135,6 @@ class TransferMoneyAPIView(APIView):
                     recipient_id=recipient_id
                 )
 
-            # Возвращаем новый баланс пользователя
             return Response(
                 data={
                     'Message': 'The money has been transferred'
