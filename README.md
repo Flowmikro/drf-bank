@@ -8,11 +8,11 @@ Django
 ___
 ### Установка 
 ```
-git clone https://github.com/Flowmikro/drf-testovoe.git
+git clone https://github.com/Flowmikro/drf-bank.git
 ```
 Перейти в директорию 
 ```
-drf-testovoe
+drf-bank
 ```
 #### Через Docker
 Прописать `.env.docker` и `.env.db.user`. Есть примеры `.env.docker.example` и `.env.db.user.example`  
